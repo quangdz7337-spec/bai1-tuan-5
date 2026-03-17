@@ -6,7 +6,7 @@ I. Nguyên lý và Lý thuyết cốt lõi
 Để hiểu bài tập này, chúng ta cần nắm vững 3 khái niệm trụ cột trong Embedded Linux:
 1. Biên dịch chéo (Cross-Compilation) là gì?
 
-  //  Vấn đề: Máy tính phát triển (Host) thường chạy chip Intel/AMD (kiến trúc x86_64), trong khi board nhúng như BeagleBone Black (Target) chạy chip kiến trúc ARM32. Mã máy của hai kiến trúc này hoàn toàn khác nhau.
+   Vấn đề: Máy tính phát triển (Host) thường chạy chip Intel/AMD (kiến trúc x86_64), trong khi board nhúng như BeagleBone Black (Target) chạy chip kiến trúc ARM32. Mã máy của hai kiến trúc này hoàn toàn khác nhau.
 
  //   Giải pháp: Chúng ta không thể dùng trình biên dịch gcc mặc định của Ubuntu để tạo file chạy cho BeagleBone. Thay vào đó, ta phải dùng một trình biên dịch đặc biệt gọi là Cross-Compiler (ví dụ: arm-buildroot-linux-gnueabihf-gcc). Trình biên dịch này chạy trên máy Host nhưng lại sinh ra mã nhị phân (binaries) dành riêng cho kiến trúc ARM.
 
